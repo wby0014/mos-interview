@@ -4,6 +4,7 @@
  */
 package com.alibaba.mos.data;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -15,6 +16,7 @@ import java.util.List;
  * @author superchao
  * @version $Id: ItemDO.java, v 0.1 2019年10月28日 11:02 AM superchao Exp $
  */
+@Builder
 @Data
 public class ItemDO implements Serializable {
     /**

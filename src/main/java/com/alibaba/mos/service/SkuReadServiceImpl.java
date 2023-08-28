@@ -81,7 +81,7 @@ public class SkuReadServiceImpl implements SkuReadService {
                         Cell cell = row.getCell(k);
                         if (cell != null && !("").equals(cell.toString().trim())) {
                             Object val = getValue(cell, attrType);
-                            if (attrType == String.class && !org.springframework.util.StringUtils.isEmpty(val)) {
+                            if (!org.springframework.util.StringUtils.isEmpty(val)) {
                                 setter(skuDO, attrName, val, attrType, j, k);
                             }
                         }
